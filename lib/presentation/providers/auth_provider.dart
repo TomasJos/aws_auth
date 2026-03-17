@@ -67,9 +67,17 @@ class AuthProvider extends ChangeNotifier {
     try {
       final success = await _authService.signIn(email, password);
       if (success) {
+        final userData = await _authService.getCurrentUserAndAttributes();
+        
         _status = AuthStatus.authenticated;
         _errorMessage = null;
-        _currentUserEmail = email;
+        if (userData != null) {
+          _currentUserEmail = userData['user'].username;
+          _currentUserName = userData['name'];
+        } else {
+          _currentUserEmail = email;
+        }
+        
         notifyListeners();
         return true;
       }

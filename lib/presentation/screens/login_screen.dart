@@ -81,7 +81,6 @@ class _LoginScreenState extends State<LoginScreen> {
                     label: 'Email',
                     hint: 'name@example.com',
                     controller: _emailController,
-                    // validator: Validators.emailValidator,
                     keyboardType: TextInputType.emailAddress,
                     prefixIcon: Icons.email_outlined,
                   ),

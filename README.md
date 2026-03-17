@@ -1,16 +1,14 @@
-# awsauth
+# FinSafe Auth Flow
 
-A new Flutter project.
+Hey, this is the repo for the AWS Cognito + Flutter auth flow I've been working on.
 
-## Getting Started
+I got tired of messy authentication setups, so I decided to build a clean, production-ready starting point that actually uses solid architecture.
 
-This project is a starting point for a Flutter application.
+### How it works under the hood
+I split the codebase up into proper layers so it doesn't become a nightmare to maintain later. Everything lives inside `lib/core`, `lib/presentation`, and `lib/data`.
 
-A few resources to get you started if this is your first Flutter project:
+For the heavy lifting, I'm using `Provider` to keep track of whether the user is logged in or not. `GoRouter` handles pushing screens around (because the default navigator is kinda awful for deep linking). AWS Amplify is wired up in the data layer to handle the actual Cognito calls—sign up, login, OTP codes, all of it.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+

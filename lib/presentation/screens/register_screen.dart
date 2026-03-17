@@ -82,14 +82,14 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   ),
                   const SizedBox(height: 8),
                   Text(
-                    'Join us to secure your future',
+                    'Sign up to get started',
                     style: Theme.of(context).textTheme.bodyMedium,
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: 48),
                   CustomTextField(
                     label: 'Full Name',
-                    hint: 'Thomas',
+                    hint: 'Full name',
                     controller: _nameController,
                     validator: (v) => Validators.requiredField(v, 'Name'),
                     prefixIcon: Icons.person_outline,

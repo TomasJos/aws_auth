@@ -17,7 +17,7 @@ class ErrorHandler {
       } else if (message.contains('LimitExceededException')) {
         return 'Attempt limit exceeded, please try after some time.';
       } else if (message.toLowerCase().contains('network') || message.toLowerCase().contains('unknown') || message.toLowerCase().contains('connection')) {
-        return 'Network error. Please check your connection. (If testing locally, ensure amplifyconfiguration.dart has your real AWS Pool IDs)';
+        return 'Network error. Please check your connection.';
       } else if (message.toLowerCase().contains('did not conform to the schema: name') || message.toLowerCase().contains('name') && message.toLowerCase().contains('required')) {
          return 'A valid Full Name is required by the server configuration.';
       }

@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 
 class AppTheme {
-  // Premium Fintech Color Palette
-  static const Color primaryColor = Color(0xFF0F172A); // Deep Slate
-  static const Color secondaryColor = Color(0xFF3B82F6); // Vibrant Blue
-  static const Color accentColor = Color(0xFF10B981); // Emerald Green
-  static const Color backgroundColor = Color(0xFFF8FAFC); // Off-White
+  static const Color primaryColor = Color(0xFF0F172A);
+  static const Color secondaryColor = Color(0xFF3B82F6);
+  static const Color accentColor = Color(0xFF10B981);
+  static const Color backgroundColor = Color(0xFFF8FAFC);
   static const Color surfaceColor = Colors.white;
-  static const Color errorColor = Color(0xFFEF4444); // Red
+  static const Color errorColor = Color(0xFFEF4444);
   static const Color textPrimary = Color(0xFF1E293B);
   static const Color textSecondary = Color(0xFF64748B);
 
